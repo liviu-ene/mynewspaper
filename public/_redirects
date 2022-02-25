@@ -1,1 +1,1 @@
-/api/* http://api.mediastack.com/v1/:splat 200
+/api/* https://newsapi.org/v2/:splat 200
