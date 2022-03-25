@@ -1,22 +1,24 @@
-import React, {useState, useEffect} from "react";
-import { fetchData } from "./api";
+import React from "react";
+import GlobalStyles from "./components/styles/GlobalStyles";
+import { Container } from "./components/styles/GridStyles";
+import Section from "./components/Section";
+import Header from "./components/Header";
 
 const App = () => {
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        const fetchDataAPI = async () => {
-          setData(await fetchData())
-        }
-        fetchDataAPI();
-      }, []) 
-
-
-    return (
-        <div>
-           {data.map((item) => <p>{item.title}</p>)}
-        </div>
-    )
-}
+  return (
+    <>
+      <GlobalStyles />
+      <div className="App">
+        <Container>
+          <Section category="general" title="General" />
+          <Section category="business" title="Business" />
+          <Section category="sports" title="Sports" />
+          <Section category="entertainment" title="Entertainment" />
+          <Section category="science" title="Science" />
+        </Container>
+      </div>
+    </>
+  );
+};
 
 export default App;
