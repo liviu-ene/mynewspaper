@@ -9,6 +9,7 @@ const App = () => {
     <>
       <GlobalStyles />
       <div className="App">
+        <Header />
         <Container>
           <Section category="general" title="General" />
           <Section category="business" title="Business" />

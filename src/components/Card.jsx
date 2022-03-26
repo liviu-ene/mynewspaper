@@ -2,7 +2,8 @@ import React from "react";
 import DefaultCard from "./styles/CardStyles";
 
 const Card = ({ title, url, description, urlToImage }) => {
-  const cleanDescription = description.replaceAll(/<\/?[^>]+(>|$)/g, ""); //remove html tags, use dangerouslySetInnerHTML (?)
+  const cleanDescription =
+    description && description.replaceAll(/<\/?[^>]+(>|$)/g, ""); //removes html tags. perhaps consider using dangerouslySetInnerHTML ? (!)
 
   return (
     <DefaultCard>

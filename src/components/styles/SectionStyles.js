@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const ContentSection = styled.section`
-  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 `;
 

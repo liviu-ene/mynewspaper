@@ -22,7 +22,7 @@ const Section = ({ category, title }) => {
     return () => {
       isCancelled = true;
     };
-  }, []);
+  }, [category]);
 
   return (
     <ContentSection id="section">
