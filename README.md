@@ -4,6 +4,8 @@
 An Aggregated news app that fetches data from all major publications and displays it in
 a compact and user-friendly manner
 
+Works with data from [NewsAPI](https://newsapi.org/)
+
 Deployed on netlify: https://my-newspaper.netlify.app/
 
 ![App Screenshot](https://i.imgur.com/4cbAJoJ.png)
